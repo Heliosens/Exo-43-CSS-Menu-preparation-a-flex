@@ -15,55 +15,55 @@ body {
 
 header {
     font-size: 2rem;
+    position: fixed;
+    width: 100%;
     text-align: right;
 }
 
 nav {
-    background: lightseagreen;
+    background: black;
+    color: white;
     padding: 1rem 1rem 1rem 0;
 }
 
-i {
+nav .fas {
     margin-left: 1rem;
     font-size: 4rem;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 1rem;
-}
-
-nav .fas {
     width: 5rem;
     display: none;
 }
 
-@media screen and (max-width: 375px) {
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    transition: border-bottom-color;
+    transition-duration: 1s;
+}
 
-    header {
-        text-align: left;
-        padding: 0;
-    }
+nav li:hover {
+    border-bottom-color: white;
+}
 
-    header a {
-        display: block;
-    }
 
-    nav {
-        padding: 0;
-    }
+
+@media screen and (max-width: 600px){
 
     nav .fas {
         display: block;
     }
 
-    nav a {
+    header {
+        text-align: left;
+    }
+
+    nav li {
         display: none;
     }
 
-    nav:hover a {
+    nav:hover li {
         display: block;
-        background: #1b0132;
     }
-
 }
