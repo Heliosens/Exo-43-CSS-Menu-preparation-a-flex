@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    font-size: 2rem;
+    text-align: right;
+}
+
+nav {
+    background: lightseagreen;
+    padding: 1rem 1rem 1rem 0;
+}
+
+i {
+    margin-left: 1rem;
+    font-size: 4rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav .fas {
+    width: 5rem;
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    header {
+        text-align: left;
+        padding: 0;
+    }
+
+    header a {
+        display: block;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav .fas {
+        display: block;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav:hover a {
+        display: block;
+        background: #1b0132;
+    }
+
+}
